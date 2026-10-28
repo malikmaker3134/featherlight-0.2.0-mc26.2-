@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "featherlight",
+  "version": "${version}",
+  "name": "Featherlight",
+  "description": "Small, safe client-side render optimizations with a Sodium-style settings menu.",
+  "authors": [],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.featherlight.Featherlight"]
+  },
+  "mixins": [
+    { "config": "featherlight.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": ">=26.2 <26.4",
+    "java": ">=25"
+  }
+}
